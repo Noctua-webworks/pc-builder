@@ -30,3 +30,11 @@ model Session {
   collaborator  Boolean?  @default(false)
   emailVerified Boolean?  @default(false)
 }
+
+model PcBuilderProduct {
+  id              Int     @id @default(autoincrement())
+  shopifyProductId String
+  title           String
+  image           String?
+  category        String?
+}

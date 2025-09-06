@@ -3,7 +3,7 @@
 client_id = "14fa5dd8e7343a710c4198be96d225df"
 name = "Pc builder"
 handle = "pc-builder-4"
-application_url = "https://animals-newport-ntsc-immediately.trycloudflare.com"
+application_url = "https://technician-wb-elder-able.trycloudflare.com"
 embedded = true
 
 [build]
@@ -26,7 +26,7 @@ api_version = "2025-07"
 scopes = "write_products"
 
 [auth]
-redirect_urls = ["https://animals-newport-ntsc-immediately.trycloudflare.com/auth/callback", "https://animals-newport-ntsc-immediately.trycloudflare.com/auth/shopify/callback", "https://animals-newport-ntsc-immediately.trycloudflare.com/api/auth/callback"]
+redirect_urls = ["https://technician-wb-elder-able.trycloudflare.com/auth/callback", "https://technician-wb-elder-able.trycloudflare.com/auth/shopify/callback", "https://technician-wb-elder-able.trycloudflare.com/api/auth/callback"]
 
 [pos]
 embedded = false

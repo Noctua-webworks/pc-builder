@@ -30,6 +30,8 @@
   try {
     // Fetch from app proxy
     const res = await fetch("/apps/pc-builder/products");
+
+    console.log(res, "res")
     const json = await res.json();
 
     if (!json.data) {
