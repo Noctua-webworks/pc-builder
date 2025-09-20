@@ -29,7 +29,14 @@
 
   try {
     // Fetch from app proxy
-    const res = await fetch("/apps/pc-builder/products");
+    const res = await fetch("/apps/pc-builder/products", {
+      method: 'GET',
+      redirect: 'manual',
+      headers: {
+        'Content-Type' : 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
+    });
 
     console.log(res, "res")
     const json = await res.json();
