@@ -2,31 +2,32 @@
 
 client_id = "14fa5dd8e7343a710c4198be96d225df"
 name = "Pc builder"
-handle = "pc-builder-4"
-application_url = "https://technician-wb-elder-able.trycloudflare.com"
+application_url = "https://emma-aggressive-don-nano.trycloudflare.com"
 embedded = true
+handle = "pc-builder-4"
 
 [build]
-include_config_on_deploy = true
 automatically_update_urls_on_dev = true
+dev_store_url = "sandeepthedev.myshopify.com"
 
 [webhooks]
 api_version = "2025-07"
 
-  [[webhooks.subscriptions]]
-  topics = [ "app/uninstalled" ]
-  uri = "/webhooks/app/uninstalled"
-
-  [[webhooks.subscriptions]]
-  topics = [ "app/scopes_update" ]
-  uri = "/webhooks/app/scopes_update"
-
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "write_products, write_app_proxy"
 
 [auth]
-redirect_urls = ["https://technician-wb-elder-able.trycloudflare.com/auth/callback", "https://technician-wb-elder-able.trycloudflare.com/auth/shopify/callback", "https://technician-wb-elder-able.trycloudflare.com/api/auth/callback"]
+redirect_urls = [
+  "https://emma-aggressive-don-nano.trycloudflare.com/auth/callback",
+  "https://emma-aggressive-don-nano.trycloudflare.com/auth/shopify/callback",
+  "https://emma-aggressive-don-nano.trycloudflare.com/api/auth/callback"
+]
+
+[app_proxy]
+url = "https://emma-aggressive-don-nano.trycloudflare.com"
+subpath = "pc-builder"
+prefix = "apps"
 
 [pos]
 embedded = false
